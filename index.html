@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <base href="https://bhuvaneshaugray.github.io/threejs-3d-model" /> -->
     <title>3D Object Model in 3js</title>
     <style>
       body {
@@ -19,11 +18,11 @@
   <body>
     <script type="module">
 
-              /**********imported files from library****************/
-              import * as THREE from 'https://bhuvaneshaugray.github.io/threejs-3d-model/build/three.module.js';
-              import { OrbitControls } from 'https://bhuvaneshaugray.github.io/threejs-3d-model/js/OrbitControls.js';
-              import { FlakesTexture } from 'https://bhuvaneshaugray.github.io/threejs-3d-model/js/FlakesTexture.js';
-              import { RGBELoader } from 'https://bhuvaneshaugray.github.io/threejs-3d-model/js/RGBELoader.js';
+              /**********import necessary files from library****************/
+              import * as THREE from 'build/three.module.js';
+              import { OrbitControls } from 'js/OrbitControls.js';
+              import { FlakesTexture } from 'js/FlakesTexture.js';
+              import { RGBELoader } from 'js/RGBELoader.js';
 
               /**********General setup****************/
               let scene, camera, renderer, controls, pointlight;
