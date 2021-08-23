@@ -19,10 +19,10 @@
     <script type="module">
 
               /**********import necessary files from library****************/
-              import * as THREE from './build/three.module.js';
-              import { OrbitControls } from './js/OrbitControls.js';
-              /*import { FlakesTexture } from './js/FlakesTexture.js';
-              import { RGBELoader } from './js/RGBELoader.js';*/
+              import * as THREE from '../build/three.module.js';
+              import { OrbitControls } from '../js/OrbitControls.js';
+              import { FlakesTexture } from '../js/FlakesTexture.js';
+              import { RGBELoader } from '../js/RGBELoader.js';
 
               /**********General setup****************/
               let scene, camera, renderer, controls, pointlight;
@@ -58,7 +58,9 @@
 
               new RGBELoader().setPath('textures/').load('cayley_interior_4k.hdr', function(hdrmap) {
 
-                let envmap = envmaploader,fromCubemap(hdrmap);
+                let envmap = envmaploader,fromCubemap(hdrmap);*/
+
+                /**/
 
                 let texture = new THREE.CanvasTexture(new FlakesTexture());
                 texture.wrapS = THREE.RepeatWrapping;
@@ -76,8 +78,8 @@
                     color: 0x8418ca,
                     normalMap: texture,
                     normalScale: new THREE.Vector2(0.15,0.15),
-                    envMap: envmap.texture
-                };*/
+                    /*envMap: envmap.texture*/
+                };/**/
 
               let ballGeo = new THREE.SphereGeometry(100,64,64);
 
